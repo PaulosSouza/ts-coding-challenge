@@ -1,0 +1,29 @@
+{
+  "name": "wc-ph",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "bin": {
+    "wc-ph": "dist/index.js"
+  },
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "dev:debug": "tsx watch --inspect src/index.ts",
+    "build": "tsup"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@boostedp/eslint-config": "^1.2.1",
+    "@boostedp/prettier": "^1.0.1",
+    "@types/node": "^20.4.4",
+    "@types/yargs": "^17.0.24",
+    "tsup": "^7.1.0",
+    "tsx": "^3.12.7",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "yargs": "^17.7.2"
+  }
+}
