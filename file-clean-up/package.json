@@ -1,0 +1,26 @@
+{
+  "name": "typescript-template",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "create:folders": "mkdir folders-01 folders-02",
+    "dev": "tsx src/main.ts",
+    "dev:schedule": "pnpm dev -s '*/2 * * * *' folders-01,folders-02",
+    "build": "tsup"
+  },
+  "devDependencies": {
+    "@boostedp/eslint-config": "^1.3.2",
+    "@boostedp/prettier": "^1.0.1",
+    "@types/node": "^20.5.1",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "npm-check-updates": "^16.12.2",
+    "tsup": "^7.2.0",
+    "tsx": "^3.12.7",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "commander": "^11.0.0",
+    "cron": "^2.4.1"
+  }
+}
